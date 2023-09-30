@@ -74,7 +74,7 @@ Estas especificaciones fueron solicitadas por el cliente
 * WAN: "Una red de área amplia (WAN) es la tecnología que conecta entre sí a las oficinas, los centros de datos, las aplicaciones en la nube y el almacenamiento en la nube" [8].
 * ACL: "Una lista de control de acceso (ACL) de red permite o deniega el tráfico entrante o saliente específico en el nivel de subred. Puede usar la ACL de red predeterminada para su VPC o puede crear una ACL de red personalizada para su VPC con reglas similares a las reglas de sus grupos de seguridad para agregar una capa de seguridad adicional a su VPC" [9].
 * EIGRP: "EIGRP (Enhanced Interior Gateway Routing Protocol) es un protoco- lo de enrutamiento propietario de Cisco, concebido para que funcione en aquellas redes implementadas solamente con equipos marca Cisco" [10].
-* NAT(Network address transalation): "Consiste en consiste en coger una dirección IP privada y traducirla a una dirección IP pública o viceversa".[11]
+
 
 Dispositivos Utilizados:
 
@@ -89,19 +89,19 @@ Dispositivos Utilizados:
 
 ## AGENDA DEL PROYECTO
 
-### Jueves 10 de Agosto:
+### Jueves 14 de Septiembre:
 Análisis de la topología a montar, lectura y entendimiento del documento, repartición básica de las tareas.
 Alvarado: Servidores DNS y Web.
 Durán: Configuración de routers.
-Pinilla: Montaje básico de la INTRANET BOG e INTRANET MAD.
+Pinilla: Montaje básico de la INTRANET BOG e INTRANET MAD con VLANs Multilayer-switchy .
 
-### Jueves 17 de Agosto:
+### Viernes 22 de Agosto:
 Reporte de avances y corrección de errores de conexión. Socialización de posibles soluciones.
-Alvarado: Configuración del ACL
-Durán: Troubleshooting del protocolo EIGRP
-Pinilla: Configuración del Multilayer-switch y Vlans
+Alvarado: Configuración del ACL y protocolos OSPF o EIGRP
+Durán: Migracion a través de Tunneling 
+Pinilla: Configuración del enrutamiento de routers
 
-### Domingo 20 de Agosto:
+### Domingo 30 de Septiembre:
 Corrección final de errores y grabación del vídeo.
 
 ### REFERENCIAS
@@ -115,8 +115,7 @@ Corrección final de errores y grabación del vídeo.
 * [8] Fragmento tomado de: "https://aws.amazon.com/es/what-is/wan/#:~:text=Una%20red%20de%20%C3%A1rea%20amplia%20(WAN)%20es%20la%20tecnolog%C3%ADa%20que,el%20almacenamiento%20en%20la%20nube."
 * [9] Fragmento tomado de: "https://docs.aws.amazon.com/es_es/vpc/latest/userguide/vpc-network-acls.html"
 * [10] Fragmento tomado de: "https://libros.univalle.edu.co/index.php/programaeditorial/catalog/download/53/4/185?inline=1#:~:text=DE%20ENCAMINAMIENTO%20IP-,EIGRP%20(Enhanced%20Interior%20Gateway%20Routing%20Protocol)%20es%20un%20protoco%2D,solamente%20con%20equipos%20marca%20Cisco."
-* [11] Fragmento tomado de: "https://openwebinars.net/blog/nat-que-es-y-para-que-sirve/"
-* [12] " Configuracion de Inter-VLAN Routing (Multilayer Switch) - Parte 2 " - https://www.youtube.com/watch?v=VOX3gNV0Q58&ab_channel=JorgeArmijo
-* [13] "Configuracion Vlan con routers + eigrp" - https://www.youtube.com/watch?v=MY6wPJD_Y7E
-* [14] "Configuring IP Addressing and IP Services Features. Cisco Documentation"
-* [15] "Default static route" - https://study-ccna.com/default-static-route/
+* [11] " Configuracion de Inter-VLAN Routing (Multilayer Switch) - Parte 2 " - https://www.youtube.com/watch?v=VOX3gNV0Q58&ab_channel=JorgeArmijo
+* [12] "Configuracion Vlan con routers + eigrp" - https://www.youtube.com/watch?v=MY6wPJD_Y7E
+* [13] "Configuring IP Addressing and IP Services Features. Cisco Documentation"
+* [14] "Default static route" - https://study-ccna.com/default-static-route/
