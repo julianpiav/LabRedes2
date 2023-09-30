@@ -27,7 +27,7 @@ A cada una de estas VLANs se les asigna unos determinados puertos del Switch y s
 Para el router, se crea una interfaz que se asocia en al puerto conectado al switch de nuestra LAN, y unas subinterfacez con la encapsulation dot1q, para su comunicacion y distribucion entre VLANs en interfaces entre los Switches y los routers, que se asocian a cada VLAN de nuestras Redes LAN.
 Ademas Se activa el enrutamiento con el protocolo EIGRP ##(su "identificador" de conexion), que debe ser el mismo para todos los routers y se declara las redes que esten conectadas a cada uno de los Routers con una IP especifica.
 
-#### ¿Se requiere asignación dinámica y/o estática?¿Dónde?¿Traducción de direcciones de forma dinámica y/o estático y/o por puertos? ¿En qué terminales se deben configurar los servicios requeridos?
+#### ¿Qué método(s) de asignación se debe(n) configurar?¿En qué terminales se deben configurar los servicios requeridos?
 5.  Se requiere tanto asignación dinámica como estática. En la red en la cuál están los servidores DNS y HTTP es recomendable usar una asignación estática, ya que dentro de la topología y el problema planteado no se contempla la necesidad de  como si ocurre tanto en las redes de Bogotá y Madrid, en las cuales existe hasta una subred para los invitados, lo cuál indica que lo más óptimo esa hacer uso de la asignación dinámica a través de DHCP. Por esta razon implementamos tambien el servidor DHCP en la Intranet de Madrid, realizando una leve modificacion a la topoligia
 
 En el servidor WEB se alojo la Pagina de los Julianes con las especificaciones del cliente, siendo: www.jdagjcdvjapa.com, esta pagina y su dominio es gestionada por el Servidor DNS.
@@ -52,11 +52,14 @@ Estas especificaciones fueron solicitadas por el cliente
 #### ¿Dónde se deben ubicar los ACLs?
 7. Los ACLs se ubicaron en los routers de Bogota y Madrid, ya que estos routers son los mas cercanos a los posibles destinos de los mensajes Externos, Siendo una configuracion ACL estandar.
 
-#### Enlace “Trunks”, IEEE 802.1q. ¿En qué interfaces se deben configurar OSPF o EIGRP (no RIP) y/o rutas
-estáticas?
+#### Enlace “Trunks”, IEEE 802.1q. ¿En qué interfaces se deben configurar OSPF o EIGRP (no RIP) y/o rutas estáticas y redistribución entre protocolos? Analice los requerimientos de red.
 8. Se configuro el protocolo EIGRP en  todas las interfaces de los routers y multilayer switch, las rutas estaticas solo las definimos en Los servidores WEB y DNS.
 
-### Validacion
+#### ¿Qué servicio(s) de migración se debe(n) implementar para permitir el acceso al servidor Web instalado en el DMZ configurado completamente en IPv6?
+
+### RESULTADOS Y ANÁLISIS
+#### Analisis
+#### Compare y explique las tablas de enrutamiento IPv4 e IPv6 de los routers ISP_BOG e ISP_ESP. ¿Qué información relevante arrojan? ¿Qué criterio utilizan para escoger la mejor ruta?
 
 
 ### Marco Teorico
