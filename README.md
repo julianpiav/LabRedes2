@@ -22,7 +22,7 @@ Con el metodo aprendido en clase y un analisis que pueda satisfacer a nuestros c
 
 
 4. Se configuraron los switches y Routers para la cominucacion de dispositivos entre VLANs, al usar las notas de clase y la documentacion de Cisco [14].
-Esta configuracion consistia principalmente en las claves para los modos privilegiados, el nombre y el mensaje del dispositivo, la creacion de las VLANs con su nombre, sus interfaces y la IP para la VLAN nativa(VLAN 99)
+Esta configuracion consistia principalmente en las claves para los modos privilegiados, el nombre y el mensaje del dispositivo y la creacion de las VLANs con su nombre
 A cada una de estas VLANs se les asigna unos determinados puertos del Switch y su modo, siendo de acceso, o para las VLAN nativa, truncado.
 Para el router, se crea una interfaz que se asocia en al puerto conectado al switch de nuestra LAN, y unas subinterfacez con la encapsulation dot1q, para su comunicacion y distribucion entre VLANs en interfaces entre los Switches y los routers, que se asocian a cada VLAN de nuestras Redes LAN.
 Ademas Se activa el enrutamiento con el protocolo EIGRP ##(su "identificador" de conexion), que debe ser el mismo para todos los routers y se declara las redes que esten conectadas a cada uno de los Routers con una IP especifica.
@@ -50,7 +50,7 @@ Estas especificaciones fueron solicitadas por el cliente
 6.Se configura el servicio de ACL(Access Control List) el cual nos permite permitir o denegar el paso de paquetes desde una red hacia otra, o por ip's específicas de dispositivos.
 
 #### ¿Dónde se deben ubicar los ACLs?
-7. Los ACLs se ubicaron en los routers de Bogota y Madrid, ya que estos routers son los mas cercanos a los posibles destinos de los mensajes Externos, Siendo una configuracion ACL estandar.
+7. Los ACLs se ubicaron en los routers de ISP_Bogota y ISP_Madrid, ya que estos routers son los mas cercanos a los posibles destinos de los mensajes Externos y tambien porque se maneja este protocolo a nivel de IPv4, Siendo una configuracion ACL estandar.
 
 #### Enlace “Trunks”, IEEE 802.1q. ¿En qué interfaces se deben configurar OSPF o EIGRP (no RIP) y/o rutas estáticas y redistribución entre protocolos? Analice los requerimientos de red.
 8. Se configuro el protocolo EIGRP en  todas las interfaces de los routers y multilayer switch, las rutas estaticas solo las definimos en Los servidores WEB y DNS.
