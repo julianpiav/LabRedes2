@@ -68,6 +68,12 @@ Estas especificaciones fueron solicitadas por el cliente
 
 6. ¿Qué  servicio(s)de  migración  se  debe(n)implementar  para  permitir  el  acceso al  servidor  Webinstalado  en  el  DMZconfiguradocompletamente  en  IPv6?
    * EIGRP
+  
+ <img width="697" alt="Screenshot 2023-09-30 at 10 16 02 PM" src="https://github.com/julianpiav/LabRedes2/assets/64561271/395de31b-3ff7-40ff-b977-b15f9202fcf2">
+ <img width="699" alt="Screenshot 2023-09-30 at 10 16 18 PM" src="https://github.com/julianpiav/LabRedes2/assets/64561271/49b9d761-bae4-40ec-8a99-cff88774836e">
+ * Para la VLAN de invitados únicamente permite el acceso usando el protocólo HTTP, mientras que para la VLAN de empleados la cuál solo permite la conexión através de HTTPS
+
+
 #### Analisis
 #### Compare y explique las tablas de enrutamiento IPv4 e IPv6 de los routers ISP_BOG e ISP_ESP. ¿Qué información relevante arrojan? ¿Qué criterio utilizan para escoger la mejor ruta?
 
@@ -105,14 +111,14 @@ Alvarado: Servidores DNS y Web.
 Durán: Configuración de routers.
 Pinilla: Montaje básico de la INTRANET BOG e INTRANET MAD con VLANs Multilayer-switchy .
 
-### Viernes 22 de Agosto:
+### Viernes 22 de Septiembre:
 Reporte de avances y corrección de errores de conexión. Socialización de posibles soluciones.
 Alvarado: Configuración del ACL y protocolos OSPF o EIGRP
 Durán: Migracion a través de Tunneling 
 Pinilla: Configuración del enrutamiento de routers
 
 ### Domingo 30 de Septiembre:
-Corrección final de errores y grabación del vídeo.
+Análisis de errores cometidos y grabación del vídeo.
 
 ### REFERENCIAS
 * [1] Fragmento tomado de: "https://concepto.de/red-lan/#ixzz7xxuZ6gL7"
