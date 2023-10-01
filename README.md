@@ -15,7 +15,7 @@ Por otro lado, además de montar dicha topología, el cliente también requiere 
 
 
 2. Para las intranet de la empresa, nos dan disponibilidad el espacio de direccionamiento, Red “Intranet BOG”: 2001:1200:A3::/48 y Red “Intranet MAD”: 2001:1200:B3::/48, y nos exigen realizar el subneteo para las siguientes 5 VLANS; Internos, Invitados, Servidores e Impresoras, VOIP y La nativa.
-Con el metodo aprendido en clase y un analisis que pueda satisfacer a nuestros clientes, llegamos a la conclusion que las VLANs tendran una asignacion de direccionamiento dependiendo a su numero identificador de VLAN, ademas de asignar sus puertos correspondientes a cada VLAN
+Con el método aprendido en clase y un análisis que pueda satisfacer a nuestros clientes, llegamos a la conclusión que las VLANs tendrán una asignación de direccionamiento dependiendo a su número identificador de VLAN, además de asignar sus puertos correspondientes a cada VLAN.
 
 ![Imagen de WhatsApp 2023-09-30 a las 10 43 44_f44f414a](https://github.com/julianpiav/LabRedes2/assets/88839459/cda7e9ce-1a41-4b15-957d-29dce2a22fb5)
 
@@ -28,11 +28,11 @@ Para el router, se crea una interfaz que se asocia en al puerto conectado al swi
 Ademas Se activa el enrutamiento con el protocolo EIGRP ##(su "identificador" de conexion), que debe ser el mismo para todos los routers y se declara las redes que esten conectadas a cada uno de los Routers con una IP especifica.
 
 #### ¿Qué método(s) de asignación se debe(n) configurar?¿En qué terminales se deben configurar los servicios requeridos?
-5.  Se requiere tanto asignación dinámica como estática. En la red en la cuál están los servidores DNS y HTTP es recomendable usar una asignación estática, ya que dentro de la topología y el problema planteado no se contempla la necesidad de  como si ocurre tanto en las redes de Bogotá y Madrid, en las cuales existe hasta una subred para los invitados, lo cuál indica que lo más óptimo esa hacer uso de la asignación dinámica a través de DHCP. Por esta razon implementamos tambien el servidor DHCP en la Intranet de Madrid, realizando una leve modificacion a la topoligia
+5.  Se requiere tanto asignación dinámica como estática. En la red en la cuál están los servidores DNS y HTTP es recomendable usar una asignación estática, ya que dentro de la topología y el problema planteado no se contempla la necesidad de  como si ocurre tanto en las redes de Bogotá y Madrid, en las cuales existe hasta una subred para los invitados, lo cuál indica que lo más óptimo esa hacer uso de la asignación dinámica a través de DHCP. Por esta razon implementamos tambien el servidor DHCP en la Intranet de Madrid, realizando una leve modificacion a la topoligía.
 
 En el servidor WEB se alojo la Pagina de los Julianes con las especificaciones del cliente, siendo: www.jdagjcdvjapa.com, esta pagina y su dominio es gestionada por el Servidor DNS.
 
-Los usuarios de la Intranet Bogota efectivamente Ingresan a la pagina WEB por el protocolo HTTPs(puerto 433) y no por el protocolo HTTP(puerto 80) (PC1) :
+Los usuarios de la Intranet Bogotaáefectivamente Ingresan a la pagina WEB por el protocolo HTTPs(puerto 433) y no por el protocolo HTTP(puerto 80) (PC1) :
 
 Y verificamos por paquetes que se hace una solicitud HTTPS por el puerto 443:
 
@@ -53,7 +53,7 @@ Estas especificaciones fueron solicitadas por el cliente
 7. Los ACLs se ubicaron en los routers de ISP_Bogota y ISP_Madrid, ya que estos routers son los mas cercanos a los posibles destinos de los mensajes Externos y tambien porque se maneja este protocolo a nivel de IPv4, Siendo una configuracion ACL estandar.
 
 #### Enlace “Trunks”, IEEE 802.1q. ¿En qué interfaces se deben configurar OSPF o EIGRP (no RIP) y/o rutas estáticas y redistribución entre protocolos? Analice los requerimientos de red.
-8. Se configuro el protocolo EIGRP en  todas las interfaces de los routers y multilayer switch, las rutas estaticas solo las definimos en Los servidores WEB y DNS.
+8. Se configuró el protocólo EIGRP en  todas las interfaces de los routers y multilayer switch, las rutas estaticas solo las definimos en Los servidores WEB y DNS.
 
 #### ¿Qué servicio(s) de migración se debe(n) implementar para permitir el acceso al servidor Web instalado en el DMZ configurado completamente en IPv6?
 
