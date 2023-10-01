@@ -58,6 +58,16 @@ Estas especificaciones fueron solicitadas por el cliente
 #### ¿Qué servicio(s) de migración se debe(n) implementar para permitir el acceso al servidor Web instalado en el DMZ configurado completamente en IPv6?
 
 ### RESULTADOS Y ANÁLISIS
+
+#### PREGUNTAS. 
+
+3. Evalúe los  servicios  de  red  requeridos  para  la  asignación  eficiente  del  esquema  de direccionamiento desarrollado.
+  * Se contaba con 3 tipos distintos para asignación de direcciones IP, siendo estos SLAAC, SLAAC & Stateless DHCP y Stateful DHCP, en nuestro caso, por la facilidad de configuración decidimos implementar SLAAC, obteniendo la información necesaria directamente del router.
+4. Qué servicio IPv4 se debe configurar?
+* ACL para el control del tráfico de paquetes en el router indicado.
+
+6. ¿Qué  servicio(s)de  migración  se  debe(n)implementar  para  permitir  el  acceso al  servidor  Webinstalado  en  el  DMZconfiguradocompletamente  en  IPv6?
+   * EIGRP
 #### Analisis
 #### Compare y explique las tablas de enrutamiento IPv4 e IPv6 de los routers ISP_BOG e ISP_ESP. ¿Qué información relevante arrojan? ¿Qué criterio utilizan para escoger la mejor ruta?
 
