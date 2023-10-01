@@ -71,11 +71,12 @@ Estas especificaciones fueron solicitadas por el cliente
   
  <img width="697" alt="Screenshot 2023-09-30 at 10 16 02 PM" src="https://github.com/julianpiav/LabRedes2/assets/64561271/395de31b-3ff7-40ff-b977-b15f9202fcf2">
  <img width="699" alt="Screenshot 2023-09-30 at 10 16 18 PM" src="https://github.com/julianpiav/LabRedes2/assets/64561271/49b9d761-bae4-40ec-8a99-cff88774836e">
- * Para la VLAN de invitados únicamente permite el acceso usando el protocólo HTTP, mientras que para la VLAN de empleados la cuál solo permite la conexión através de HTTPS
+ 7. Para la VLAN de invitados únicamente permite el acceso usando el protocólo HTTP, mientras que para la VLAN de empleados la cuál solo permite la conexión através de HTTPS
 
 
 #### Analisis
 #### Compare y explique las tablas de enrutamiento IPv4 e IPv6 de los routers ISP_BOG e ISP_ESP. ¿Qué información relevante arrojan? ¿Qué criterio utilizan para escoger la mejor ruta?
+
 
 
 ### Marco Teorico
